@@ -1,9 +1,15 @@
 import React from 'react';
 import { RentalCard } from './RentalCard';
 import { connect } from "react-redux";
+import * as actions from '../../actions';
 class RentalList extends React.Component {
+
+  componentWillMount() {
+    this.props.dispatch(actions.fetchRentals());
+  }
+
   renderRentals() {
-    return this.props.rentals.map((rental, key) => {
+    return this.props.rentals.data.map((rental, key) => {
       return(
         <RentalCard key={key} rental={rental} />
       )
