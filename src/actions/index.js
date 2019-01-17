@@ -1,4 +1,4 @@
-import { FETCH_RENTALS } from "./types";
+import { FETCH_RENTALS, FETCH_RENTALS_BY_ID } from "./types";
 
 const rentals = [{
   id: 1,
@@ -60,3 +60,12 @@ export const fetchRentals = () => {
     rentals
   };
 }
+
+export const fetchRentalsById = id => {
+  const rental = rentals.find(rental => rental.id.toString() === id);
+  return {
+    type: FETCH_RENTALS_BY_ID,
+    rental
+  };
+}
+

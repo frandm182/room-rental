@@ -9,7 +9,7 @@ class RentalList extends React.Component {
   }
 
   renderRentals() {
-    return this.props.rentals.data.map((rental, key) => {
+    return this.props.rentals.map((rental, key) => {
       return(
         <RentalCard key={key} rental={rental} />
       )
@@ -30,7 +30,7 @@ class RentalList extends React.Component {
 
 function mapStateToProps(state) {
   return {
-    rentals: state.rentals
+    rentals: state.rentals.data
   }
 }
 
