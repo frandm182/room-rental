@@ -11,9 +11,9 @@ export class RentalList extends React.Component {
   }
 
   renderRentals() {
-    return this.state.rentals.map(() => {
+    return this.state.rentals.map((card, key) => {
       return(
-        <RentalCard />
+        <RentalCard key={key}  />
       )
     });
   }
