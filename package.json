@@ -26,7 +26,9 @@
   "homepage": "https://github.com/frandm182/room-rental#readme",
   "dependencies": {
     "bootstrap": "^4.1.2",
+    "express": "^4.16.4",
     "jquery": "^3.3.1",
+    "mongoose": "^5.4.6",
     "node-sass-chokidar": "^1.2.2",
     "npm-run-all": "^4.1.2",
     "popper.js": "^1.14.3",
