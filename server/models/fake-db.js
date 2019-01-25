@@ -49,9 +49,9 @@ class FakeDb {
   }
 
   seeDb() {
-    this.cleanDb();
-    console.log('cleaned');
-    this.pushRentalsToDb();
+    // this.cleanDb();
+    // console.log('cleaned');
+    // this.pushRentalsToDb();
   }
 }
 
