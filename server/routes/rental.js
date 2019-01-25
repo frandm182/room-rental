@@ -10,8 +10,9 @@ router.get('', (req, res) => {
 router.get('/:id', (req, res) => {
   const { id } = req.params;
   Rental.findById(id, (err, foundRental) => {
-    console.log(id)
-    res.json(foundRental);
+    err ?
+    res.status(422).send({ errors: [{ title: 'Rental error', detail: 'Could not find a rental'}]}) :
+    res.status(200).json(foundRental);
   });
 });
 

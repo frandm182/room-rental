@@ -22,7 +22,7 @@
   "eqnull"        : false,
   "esnext"        : true,
   "evil"          : false,
-  "expr"          : false,
+  "expr"          : true,
   "funcscope"     : true,
   "globalstrict"  : true,
   "iterator"      : false,
