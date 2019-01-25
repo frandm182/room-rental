@@ -16,17 +16,17 @@
   "strict"        : false,
   "trailing"      : true,
   "unused"        : true,
-  "asi"           : false,
+  "asi"           : true,
   "boss"          : false,
   "debug"         : true,
   "eqnull"        : false,
-  "esnext"        : true,
+  "esnext"        : false,
   "evil"          : false,
   "expr"          : true,
   "funcscope"     : true,
   "globalstrict"  : true,
   "iterator"      : false,
-  "lastsemic"     : false,
+  "lastsemic"     : true,
   "laxbreak"      : false,
   "laxcomma"      : false,
   "loopfunc"      : false,
@@ -53,6 +53,7 @@
   "predef"        : [
     "require"
   ],
-
+  "esversion": 6,
+  "-W138": true,
   "indent"        : 2
 }

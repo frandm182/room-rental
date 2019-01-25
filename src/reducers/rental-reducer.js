@@ -1,4 +1,5 @@
-import { FETCH_RENTALS, FETCH_RENTALS_BY_SUCCESS, FETCH_RENTALS_BY_INIT } from "../actions/types";
+/* jshint ignore:start*/
+import { FETCH_RENTALS_INIT, FETCH_RENTALS_SUCCESS, FETCH_RENTALS_BY_SUCCESS, FETCH_RENTALS_BY_INIT } from "../actions/types";
 
 const INITIAL_STATE = {
   rentals: {
@@ -15,7 +16,10 @@ export const rentalReducer = (state = INITIAL_STATE.rentals, action) => {
 
   switch (action.type) {
 
-    case FETCH_RENTALS:
+    case FETCH_RENTALS_INIT:
+      return { ...state, data: [] };
+
+    case FETCH_RENTALS_SUCCESS:
       return { ...state, data: action.rentals };
 
     default:
@@ -40,3 +44,4 @@ export const selectedRentalReducer = (state = INITIAL_STATE.rental, action) => {
 
   }
 }
+/* jshint ignore:end*/
