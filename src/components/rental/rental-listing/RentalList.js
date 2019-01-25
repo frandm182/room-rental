@@ -1,5 +1,5 @@
 import React from 'react';
-import { RentalCard } from '../rental-detail/RentalCard';
+import { RentalCard } from './RentalCard';
 import { connect } from "react-redux";
 import * as actions from 'actions';
 class RentalList extends React.Component {
