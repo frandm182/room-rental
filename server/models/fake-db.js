@@ -7,7 +7,7 @@ class FakeDb {
       city: 'San Francisco',
       street: 'Main street',
       category: 'condo',
-      image: 'https://booksync-jerga-prod.s3.amazonaws.com/uploads/rental/image/5/image.jpg',
+      image: 'http://via.placeholder.com/350x250',
       bedrooms: 4,
       description: 'Very nice aparment',
       dailyRate: 43
@@ -17,7 +17,7 @@ class FakeDb {
       city: 'New York',
       street: 'Time square',
       category: 'apartment',
-      image: 'https://booksync-jerga-prod.s3.amazonaws.com/uploads/rental/image/5/image.jpg',
+      image: 'http://via.placeholder.com/350x250',
       bedrooms: 2,
       description: 'Very nice aparment in center of the city',
       dailyRate: 11
@@ -27,7 +27,7 @@ class FakeDb {
       city: 'Los Angeles',
       street: 'Banika 18',
       category: 'house',
-      image: 'https://booksync-jerga-prod.s3.amazonaws.com/uploads/rental/image/5/image.jpg',
+      image: 'http://via.placeholder.com/350x250',
       bedrooms: 4,
       description: 'Very nice aparment',
       dailyRate: 23

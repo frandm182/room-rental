@@ -30,8 +30,20 @@ export const fetchRentals = () =>
 export const fetchRentalsById = id =>
   dispatch => {
     dispatch(fetchRentalByIdInit());
-    axios.get(`/api/v1/rentals/${id}`)
+    /*dispatch(fetchRentalsByIdSuccess({
+      _id: 1,
+      title: 'Nice view to ocean',
+      city: 'San Francisco',
+      street: 'Main street',
+      category: 'condo',
+      image: 'http://via.placeholder.com/350x250',
+      bedrooms: 4,
+      description: 'Very nice aparment',
+      dailyRate: 43
+    })); */
+     axios.get(`/api/v1/rentals/${id}`)
       .then(res => res.data)
       .then(rental => dispatch(fetchRentalsByIdSuccess(rental)));
+
   };
 

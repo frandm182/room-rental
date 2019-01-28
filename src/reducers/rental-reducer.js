@@ -12,7 +12,7 @@ const INITIAL_STATE = {
 
 export const rentalReducer = (state = INITIAL_STATE.rentals, action) => {
 
-  console.log(action, state);
+  // console.log(action, state);
 
   switch (action.type) {
 
@@ -37,7 +37,7 @@ export const selectedRentalReducer = (state = INITIAL_STATE.rental, action) => {
       return { ...state, data: {} };
 
     case FETCH_RENTALS_BY_SUCCESS:
-      console.log(action, { ...state, data: action.rental });
+      // console.log(action, { ...state, data: action.rental });
       return { ...state, data: action.rental };
 
     default:
